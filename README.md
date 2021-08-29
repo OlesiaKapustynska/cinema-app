@@ -1,6 +1,7 @@
 ## Cinema app 
 This project is the implementation of the main functions of interaction between the cinema and the user.
 ![pic](https://www.pngkit.com/png/full/10-100286_cinema-png-image-film.png)
+
 ###Technologies used:
 - Spring - Core / MVC / Web / Security
 - Hibernate
