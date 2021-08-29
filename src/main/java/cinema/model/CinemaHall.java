@@ -4,19 +4,14 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
 @Entity
-@Table(name = "cinema_halls")
 public class CinemaHall {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private int capacity;
     private String description;
-
-    public CinemaHall() {
-    }
 
     public Long getId() {
         return id;
@@ -44,7 +39,8 @@ public class CinemaHall {
 
     @Override
     public String toString() {
-        return "CinemaHall{" + "id=" + id
+        return "CinemaHall{"
+                + "id=" + id
                 + ", capacity=" + capacity
                 + ", description='" + description + '\'' + '}';
     }
